@@ -2,16 +2,16 @@
 if(isset($_POST['email'])) {
      
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "dummy@dummyemail.com";
-    $email_subject = "An email from Envy";
+    $email_to = "zartre.y@gmail.com";
+    $email_subject = "THXSP";
      
      
     function died($error) {
         // your error code can go here
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br /><br />";
+        echo "มีข้อผิดพลาดเกิดขึ้น";
+        echo "ด้านล่างนี้คือข้อผิดพลาด<br /><br />";
         echo $error."<br /><br />";
-        echo "Please go back and fix these errors.<br /><br />";
+        echo "กรุณาแก้ข้อผิดพลาดเหล่านี้<br /><br />";
         die();
     }
      
@@ -29,14 +29,11 @@ if(isset($_POST['email'])) {
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
   if(!preg_match($email_exp,$email_from)) {    
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    $error_message .= 'อีเมลไม่ถูกต้อง<br />';
   }
-    $string_exp = "/^[A-Za-z .'-]+$/";
-  if(!preg_match($string_exp,$name)) {
-    $error_message .= 'The name you entered does not appear to be valid.<br />';
-  }
+    
   if(strlen($message) < 2) {
-    $error_message .= 'The message you entered do not appear to be valid.<br />';
+    $error_message .= 'ข้อความไม่ถูกต้อง<br />';
   }
   if(strlen($error_message) > 0) {
     died($error_message);

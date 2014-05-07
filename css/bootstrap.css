@@ -1061,7 +1061,8 @@ pre code {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 940px;
+	max-width: 940px;
+	font-family: montserratbold, Arial, sans-serif;
   }
   .col-md-1,
   .col-md-2,
@@ -5068,7 +5069,9 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron p {
-  line-height: 1.4;
+	line-height: 1.4;
+	font-size: 7rem;
+	font-family: montserratregular, Arial, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
